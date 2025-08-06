@@ -32,33 +32,28 @@ This project is a simple Python Flask web application for note-taking, deployed 
 1. **Clone the repository**
 
 
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+     git clone https://github.com/your-username/your-repo-name.git
+     cd your-repo-name
 
 2. **Run the Ansible playbook**
 
 This will configure your EC2 instance, install dependencies, and deploy the app files.
 
-Copy
-Edit
-   ansible-playbook -i hosts site.yml
+    ansible-playbook -i hosts site.yml
 
 3. **Start the Flask app on the EC2 instance**
 
 SSH into your EC2:
 
-    ssh -i your-key.pem ec2-user@your-ec2-ip
+     ssh -i your-key.pem ec2-user@your-ec2-ip
 
-Copy
-Edit
-    python3 /home/ec2-user/app.py
+     python3 /home/ec2-user/app.py
+    
 4. **Access the app**
 
 Open your browser and visit:
 
-arduino
-Copy
-    http://your-ec2-public-ip:5000
+     http://your-ec2-public-ip:5000
 
 
 
