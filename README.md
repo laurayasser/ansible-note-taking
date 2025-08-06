@@ -22,7 +22,7 @@ This project is a simple Python Flask web application for note-taking, deployed 
 - AWS EC2 instance with Amazon Linux or similar
 - Python 3 installed on the EC2 instance
 - Ansible installed on your control machine
-- Access to AWS security group allowing port 5000 inbound traffic
+- Access to AWS security group allowing port 80 inbound traffic
 - Git installed (optional for cloning this repo)
 
 ---
@@ -53,7 +53,7 @@ SSH into your EC2:
 
 Open your browser and visit:
 
-     http://your-ec2-public-ip:5000
+     http://your-ec2-public-ip:80
 
 
 
