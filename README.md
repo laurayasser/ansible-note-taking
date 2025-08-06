@@ -39,7 +39,7 @@ cd your-repo-name
 
 This will configure your EC2 instance, install dependencies, and deploy the app files.
 
-bash
+```bash
 Copy
 Edit
 ansible-playbook -i hosts site.yml
@@ -48,13 +48,13 @@ ansible-playbook -i hosts site.yml
 
 SSH into your EC2:
 
-bash
+```bash
 Copy
 Edit
 ssh -i your-key.pem ec2-user@your-ec2-ip
 Run:
 
-bash
+```bash
 Copy
 Edit
 python3 /home/ec2-user/app.py
@@ -65,7 +65,7 @@ Open your browser and visit:
 arduino
 Copy
 Edit
-http://your-ec2-public-ip:5000
+```http://your-ec2-public-ip:5000
 
 
 
