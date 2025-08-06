@@ -34,7 +34,8 @@ This project is a simple Python Flask web application for note-taking, deployed 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-Run the Ansible playbook
+
+2. **Run the Ansible playbook**
 
 This will configure your EC2 instance, install dependencies, and deploy the app files.
 
@@ -42,7 +43,8 @@ bash
 Copy
 Edit
 ansible-playbook -i hosts site.yml
-Start the Flask app on the EC2 instance
+
+3. **Start the Flask app on the EC2 instance**
 
 SSH into your EC2:
 
@@ -56,7 +58,7 @@ bash
 Copy
 Edit
 python3 /home/ec2-user/app.py
-Access the app
+4. **Access the app**
 
 Open your browser and visit:
 
@@ -64,28 +66,6 @@ arduino
 Copy
 Edit
 http://your-ec2-public-ip:5000
-Notes
-The Flask app listens on port 5000. Make sure your EC2 security group allows inbound traffic on this port.
 
-The Ansible playbook deploys index.html and other config files to /home/ec2-user/templates/.
 
-You can modify the UI by editing templates/index.html and redeploying.
 
-License
-This project is open source and free to use.
-
-Contact
-For any questions, feel free to contact Your Name.
-
-yaml
-Copy
-Edit
-
----
-
-You can save this as `README.md` in your project root and commit it to GitHub:
-
-```bash
-git add README.md
-git commit -m "Add project README"
-git push origin main
