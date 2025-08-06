@@ -42,7 +42,7 @@ This will configure your EC2 instance, install dependencies, and deploy the app 
 ```bash
 Copy
 Edit
-ansible-playbook -i hosts site.yml
+ansible-playbook -i hosts site.yml```
 
 3. **Start the Flask app on the EC2 instance**
 
